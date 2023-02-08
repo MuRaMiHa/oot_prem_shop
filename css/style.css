@@ -1,0 +1,607 @@
+/*
+ * ATTENTION! This file is automatically created from several CSS files.
+ * Find file path and name in the comments in the beginning of the each code block
+ */
+/*
+ * FILE START: _mod_files/_css/common.css
+ */
+ @charset "utf-8"; /* 
+ -- COMMON.CSS strucrure: --
+ 1. Reset browser's defaults styles
+ 2. Common styles
+ 3. Current design styles
+ 4. Navigation styles
+ 5. Modules
+ 6. E-commerce
+ 7. System
+*/
+/* 1. RESET BROWSER's DEFAULTS ****************************************************************************************************/
+html, body, ul, ol, li, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, p, a, cite, blockquote {
+   list-style: none;
+   margin: 0;
+   outline: none;
+   padding: 0;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+   width: 100%;
+}
+
+th, td {
+   text-align: left;
+   vertical-align: top;
+}
+
+a img {
+   border: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, .alt_header1, .alt_header2, .alt_header3, .alt_header4, .alt_header5 {
+   margin: 0px 0px 8px 0px;
+}
+
+p {
+   margin: 0px 0px 15px 0px;
+   padding: 0px;
+}
+
+table.dsn, table.dsn tbody, table.dsn tr, table.dsn th, table.dsn td {
+   margin: 0;
+   padding: 0;
+}
+
+table.dsn {
+   border-collapse: separate;
+   border-spacing: 0;
+}
+
+.wrapper {
+   position: relative;
+}
+
+.clear {
+   clear: both;
+   height: 0px;
+   overflow: hidden;
+}
+
+/* END RESET BROWSER's DEFAULTS */
+.status_error {
+   color: #660000;
+   font-size: 10;
+}
+
+.status_notice {
+   color: #666666;
+   font-size: 10;
+}
+
+.status_normal {
+   color: #000000;
+   font-size: 10;
+}
+
+/* 2. COMMON STYLES ****************************************************************************************************/
+/* @font-face
+---------------------------------------------------------------------------------------------------------- */
+@font-face {
+   font-family: 'UniversCondensedMedium';
+   src: url('/web/20130121014240im_/http://shop.worldoftanks.ru/_mod_files/font/unvr57x1-webfont.eot');
+   src: url('/web/20130121014240im_/http://shop.worldoftanks.ru/_mod_files/font/unvr57x1-webfont.eot#iefix') format('embedded-opentype'), url('/web/20130121014240im_/http://shop.worldoftanks.ru/_mod_files/font/unvr57x1-webfont.woff') format('woff'), url('/web/20130121014240im_/http://shop.worldoftanks.ru/_mod_files/font/unvr57x1-webfont.ttf') format('truetype'), url('/web/20130121014240im_/http://shop.worldoftanks.ru/_mod_files/font/unvr57x1-webfont.svg#UniversCondensedMedium') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'ArialNarrow';
+   src: url('/web/20130121014240im_/http://shop.worldoftanks.ru/_mod_files/font/arialn-webfont.eot');
+   src: url('/web/20130121014240im_/http://shop.worldoftanks.ru/_mod_files/font/arialn-webfont.eot#iefix') format('embedded-opentype'), url('/web/20130121014240im_/http://shop.worldoftanks.ru/_mod_files/font/arialn-webfont.woff') format('woff'), url('/web/20130121014240im_/http://shop.worldoftanks.ru/_mod_files/font/arialn-webfont.ttf') format('truetype'), url('/web/20130121014240im_/http://shop.worldoftanks.ru/_mod_files/font/arialn-webfont.svg#ArialNarrow') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+/* Typography
+---------------------------------------------------------------------------------------------------------- */
+body {
+   color: #fff;
+   font: 14px/18px Arial, Helvetica, sans-serif;
+   background-color: #000;
+}
+
+h1 a.h-link, h1 a.h-link:visited {
+   color: #fff;
+}
+
+h1, .alt_header1 {
+   font: 31px "UniversCondensedMedium", "Myriad Pro", Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+   margin: 0 0 18px;
+}
+
+h2, .alt_header2, h2 a, h2 a:visited {
+   color: #969687;
+   font: 22px "UniversCondensedMedium", "Myriad Pro", Arial, Helvetica, sans-serif;
+   margin: 0 0 18px;
+}
+
+h3, .alt_header3, h3 a, h3 a:visited {
+   color: #fff;
+   font: normal 17px/20px "ArialNarrow", Helvetica, sans-serif;
+   margin: 0 0 18px;
+}
+
+h4, .alt_header4, h4 a, h4 a:visited {
+   color: #969687;
+   font-size: 18px;
+   font-weight: normal;
+   margin-bottom: 15px;
+   margin-top: 25px;
+}
+
+h5, .alt_header5, h5 a, h5 a:visited {
+   color: #B8B288;
+   font-size: 1em;
+   font-weight: normal;
+   margin-bottom: 15px;
+   margin-top: 5px;
+}
+
+p {
+   margin: 0 0 18px;
+}
+
+a {
+   color: #ba4a16;
+}
+
+table {
+   margin: 0 0 15px;
+}
+
+table th {
+   background: #181a19;
+   border: 1px solid #292b2a;
+   color: #666666;
+   font: normal 12px Arial, Helvetica, sans-serif;
+   padding: 7px 10px;
+}
+
+table th span {
+   display: block;
+   font: 12px Arial, Helvetica, sans-serif;
+}
+
+table td {
+   background: #111312;
+   color: #999a9b;
+   border: 1px solid #292b2a;
+   font: 13px Arial, Helvetica, sans-serif;
+   padding: 7px 10px;
+}
+
+blockquote {
+   background: url(/web/20130121014240im_/http://shop.worldoftanks.ru/_mod_files/images/bg-quote.gif) no-repeat 24px 24px #413d3a;
+   font: italic 16px/22px Georgia, "Times New Roman", Times, serif;
+   margin: 0 0 15px;
+   padding: 25px 60px 10px;
+}
+
+blockquote img {
+   margin: 0 0 -7px 15px;
+}
+
+cite {
+   background: #413d3a;
+   display: block;
+   font-style: normal;
+   margin: 0 0 15px;
+   padding: 25px 60px;
+}
+
+.content ul {
+   margin: 0 0 15px 80px;
+}
+
+.content ul li {
+   list-style: square;
+}
+
+.content ol {
+   margin: 0 0 15px 80px;
+}
+
+.content ol li {
+   list-style: decimal;
+}
+
+.content .c-img {
+   margin: 0 0 15px;
+}
+
+.content .c-img-left {
+   float: left;
+   padding: 0 30px 0 0;
+   width: 300px;
+}
+
+.content .c-img-right {
+   float: right;
+   padding: 0 0 0 30px;
+   width: 300px;
+}
+
+.content .c-img-full {
+   clear: both;
+}
+
+.content .c-img img {
+   display: block;
+   margin: 0 0 5px;
+}
+
+.content .c-img span {
+   color: #969687;
+   display: block;
+   font: 13px Arial, Helvetica, sans-serif;
+}
+
+/* ---------------------------------------------------------------------- */
+/* MediaBox control */
+.MediaBox_shadow {
+   position: fixed;
+   display: none;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background: #000;
+   z-index: 100000;
+}
+
+* html .MediaBox_shadow {
+   position: absolute;
+}
+
+.MediaBox {
+   position: fixed;
+   display: none;
+   background: #fff;
+   z-index: 100001;
+}
+
+* html .MediaBox {
+   position: absolute;
+}
+
+.MediaBox_shadowL, .MediaBox_shadowR, .MediaBox_shadowT, .MediaBox_shadowB, .MediaBox_shadowLT, .MediaBox_shadowRT, .MediaBox_shadowLB, .MediaBox_shadowRB {
+   position: absolute;
+   overflow: hidden;
+}
+
+.MediaBox_shadowL, .MediaBox_shadowR {
+   width: 15px;
+   height: 100%;
+   background: url(/web/20130121014240im_/http://shop.worldoftanks.ru/_img/ami_jsapi/shade-v.png) repeat-y;
+}
+
+.MediaBox_shadowL {
+   left: -15px;
+   top: 0px;
+}
+
+.MediaBox_shadowR {
+   right: -15px;
+   top: 0px;
+   background-position: -15px 0px;
+}
+
+.MediaBox_shadowT, .MediaBox_shadowB {
+   width: 100%;
+   height: 15px;
+   background: url(/web/20130121014240im_/http://shop.worldoftanks.ru/_img/ami_jsapi/shade-h.png) repeat-x;
+}
+
+.MediaBox_shadowT {
+   left: 0px;
+   top: -15px;
+}
+
+.MediaBox_shadowB {
+   left: 0px;
+   bottom: -15px;
+   background-position: 0px -15px;
+}
+
+.MediaBox_shadowLT, .MediaBox_shadowRT, .MediaBox_shadowLB, .MediaBox_shadowRB {
+   width: 15px;
+   height: 15px;
+   background: url(/web/20130121014240im_/http://shop.worldoftanks.ru/_img/ami_jsapi/shade-c.png) no-repeat;
+}
+
+.MediaBox_shadowLT {
+   left: -15px;
+   top: -15px;
+}
+
+.MediaBox_shadowRT {
+   right: -15px;
+   top: -15px;
+   background-position: -15px 0px;
+}
+
+.MediaBox_shadowLB {
+   left: -15px;
+   bottom: -15px;
+   background-position: 0px -15px;
+}
+
+.MediaBox_shadowRB {
+   right: -15px;
+   bottom: -15px;
+   background-position: -15px -15px;
+}
+
+.MediaBox_speckLT {
+   position: absolute;
+   width: 0px;
+   height: 0px;
+}
+
+.MediaBox_speckRB {
+   position: absolute;
+   width: 0px;
+   height: 0px;
+}
+
+.MediaBox_close {
+   position: absolute;
+   width: 39px;
+   height: 39px;
+   right: -20px;
+   top: -20px;
+   background: url(/web/20130121014240im_/http://shop.worldoftanks.ru/_img/ami_jsapi/close.png);
+   cursor: pointer;
+}
+
+.MediaBox_loader {
+   position: absolute;
+   width: 32px;
+   height: 32px;
+   left: 50%;
+   top: 50%;
+   margin: -16px 0px 0px -16px;
+   background: url(/web/20130121014240im_/http://shop.worldoftanks.ru/_img/ami_jsapi/loader.gif);
+}
+
+.MediaBox_container {
+   margin: 10px 10px;
+}
+
+/* Black version */
+.MediaBoxBlack {
+   background: #000;
+}
+
+.MediaBoxBlack .MediaBox_shadowL, .MediaBoxBlack .MediaBox_shadowR {
+   background-image: url(/web/20130121014240im_/http://shop.worldoftanks.ru/_img/ami_jsapi/glass-frame-v.png);
+}
+
+.MediaBoxBlack .MediaBox_shadowT, .MediaBoxBlack .MediaBox_shadowB {
+   background-image: url(/web/20130121014240im_/http://shop.worldoftanks.ru/_img/ami_jsapi/glass-frame-h.png);
+}
+
+.MediaBoxBlack .MediaBox_shadowLT, .MediaBoxBlack .MediaBox_shadowRT, .MediaBoxBlack .MediaBox_shadowLB, .MediaBoxBlack .MediaBox_shadowRB {
+   background-image: url(/web/20130121014240im_/http://shop.worldoftanks.ru/_img/ami_jsapi/glass-frame-c.png);
+}
+
+.MediaBoxBlack .MediaBox_speckLT {
+   background-image: url(/web/20130121014240im_/http://shop.worldoftanks.ru/_img/ami_jsapi/glass-frame-c2lt.png);
+}
+
+.MediaBoxBlack .MediaBox_speckRB {
+   background-image: url(/web/20130121014240im_/http://shop.worldoftanks.ru/_img/ami_jsapi/glass-frame-c2rb.png);
+}
+
+.MediaBoxBlack .MediaBox_close {
+   right: -25px;
+   top: -25px;
+   background-image: url(/web/20130121014240im_/http://shop.worldoftanks.ru/_img/ami_jsapi/glass-frame-close.png);
+}
+
+.MediaBoxBlack .MediaBox_loader {
+   background-image: url(/web/20130121014240im_/http://shop.worldoftanks.ru/_img/ami_jsapi/loader-black.gif);
+}
+
+.MediaBoxBlack .MediaBox_container {
+   margin: 0px 0px;
+}
+
+/* Multiselectbox */
+/* 7. SYSTEM ****************************************************************************************************/
+table#sign {
+   position: relative;
+}
+
+table#sign td {
+   background-color: #000;
+   text-align: left;
+   padding-left: 50%;
+   padding-top: 10px;
+   color: #969687;
+   font: normal 12px/15px Arial,Helvetica,sans-serif;
+   border: none;
+   font-style: normal;
+   font-weight: 400;
+}
+
+table#sign A, table#sign A:hover, table#sign A:visited {
+   color: #969687;
+   text-decoration: none;
+}
+
+#stat {
+   display: none;
+}
+
+#sp {
+   display: none;
+}
+
+#status_message {
+   background: #080d12 url(/web/20130121014240im_/http://shop.worldoftanks.ru/_mod_files/images/bg-info.jpg) top left no-repeat;
+   position: fixed;
+   top: 200px;
+   left: 200px;
+   padding: 20px;
+   font-size: 14px;
+   display: 'inline-block';
+   visibility: hidden;
+   /*background:#fffcb0;*/
+   -moz-border-radius: 2px;
+   -webkit-border-radius: 2px;
+   border-radius: 2px;
+   z-index: 10000;
+   color: #ffffff;
+}
+
+.status_error {
+   border: 1px #d22617 solid;
+   -moz-box-shadow: 0px 0px 15px 15px #4d1e07;
+   -webkit-box-shadow: 0px 0px 15px 20px #4d1e07;
+   box-shadow: 0px 0px 15px 15px #4d1e07;
+}
+
+.status_normal {
+   background: #444444;
+}
+
+.status_notice {
+   border: 1px #4776a5 solid;
+   -moz-box-shadow: 0px 0px 23px 0px rgba(1,114,193,0.4), 0px 0px 40px 8px rgba(0,0,0,0.8);
+   -webkit-box-shadow: 0px 0px 23px 0px rgba(1,114,193,0.4), 0px 0px 40px 8px rgba(0,0,0,0.8);
+   box-shadow: 0px 0px 23px 0px rgba(1,114,193,0.4), 0px 0px 40px 8px rgba(0,0,0,0.8);
+}
+
+.status_notice2 {
+   border: 1px #4776a5 solid;
+   -moz-box-shadow: 0px 0px 15px 15px #071e2d;
+   -webkit-box-shadow: 0px 0px 15px 20px #071e2d;
+   box-shadow: 0px 0px 23px 0px rgba(1,114,193,0.4), 0px 0px 40px 8px rgba(0,0,0,0.8);
+}
+
+.local_status_error {
+   color: #800000;
+}
+
+.local_status_notice {
+   color: #008000;
+}
+
+.local_status_normal {
+   color: #008000;
+}
+
+/* SYSTEM Text editor styles */
+div.amiroTEdDiv {
+}
+
+div.amiroTEdDivEditor {
+   display: block;
+}
+
+div.amiroTEdDivPreview {
+   border: 1px solid black;
+   display: none;
+   overflow: auto;
+}
+
+img.amiroTEdCtrl {
+   border: 0px;
+   cursor: pointer;
+}
+
+select.amiroTEdCtrl, input.amiroTEdCtrlButton {
+   font: normal 0.9em Arial;
+   text-decoration: none;
+   color: #000000;
+   margin-bottom: 4px;
+   width: auto;
+}
+
+img.amiroTEdSep {
+   border: 0px;
+}
+
+img.amiroTEdSmile {
+   border: 0px;
+   cursor: pointer;
+}
+
+textarea.amiroTEdCtrl {
+}
+
+div.amiroTEdDivResize {
+   height: 4px;
+   margin-top: 1px;
+   background-color: #d4d0c8;
+   border-bottom: 1px solid #808080;
+   margin-bottom: 1px;
+   cursor: s-resize;
+}
+
+span.amiroTEdMore {
+   cursor: pointer;
+   height: 25px;
+   font: bold 1.3em arial;
+   text-decoration: underline;
+   color: #000000;
+}
+
+BLOCKQUOTE.edQuote {
+   border-left: 2px solid #999999;
+   margin: 0px;
+   padding: 10px;
+   margin-left: 15px;
+   background: #f9f9f9;
+}
+
+PRE.edCode {
+   margin: 5px 0px 5px 16px;
+   width: 500px;
+   overflow: auto;
+   border: 1px dotted gray;
+   padding: 5px;
+}
+
+/* SYSTEM Text editor styles */
+/* END SYSTEM */
+/*
+* FILE END: _mod_files/_css/common.css
+*/
+/*
+    FILE ARCHIVED ON 01:42:40 Jan 21, 2013 AND RETRIEVED FROM THE
+    INTERNET ARCHIVE ON 08:24:54 Dec 30, 2022.
+    JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+    ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+    SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+ captures_list: 80.029
+ exclusion.robots: 0.104
+ exclusion.robots.policy: 0.093
+ RedisCDXSource: 0.708
+ esindex: 0.009
+ LoadShardBlock: 52.95 (3)
+ PetaboxLoader3.datanode: 46.775 (4)
+ CDXLines.iter: 22.885 (3)
+ load_resource: 59.833
+ PetaboxLoader3.resolve: 26.29
+*/
